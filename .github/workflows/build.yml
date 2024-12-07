@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
-        distribution: 'adoptopenjdk'  # This specifies the JDK distribution (you can use 'zulu', 'adoptopenjdk', etc.)
+        distribution: 'temurin'  # Use 'temurin' for Adoptium (formerly AdoptOpenJDK)
 
     - name: Build with Gradle
       run: ./gradlew build
